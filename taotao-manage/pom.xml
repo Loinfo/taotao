@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>taotao-parent</artifactId>
+        <groupId>com.taotao</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../taotao-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.taotao</groupId>
+    <artifactId>taotao-manage</artifactId>
+    <packaging>pom</packaging>
+
+    <name>taotao-manage</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>../taotao-manage-dao</module>
+        <module>taotao-manage-dao</module>
+        <module>taotao-manage-pojo</module>
+        <module>taotao-manage-interface</module>
+        <module>taotao-manage-service</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <artifactId>taotao-common</artifactId>
+            <groupId>com.taotao</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8080</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
