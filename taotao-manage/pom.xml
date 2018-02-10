@@ -10,12 +10,13 @@
 
     <groupId>com.taotao</groupId>
     <artifactId>taotao-manage</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
 
     <name>taotao-manage</name>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>../taotao-manage-dao</module>
         <module>taotao-manage-dao</module>
         <module>taotao-manage-pojo</module>
         <module>taotao-manage-interface</module>
@@ -30,7 +31,6 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>

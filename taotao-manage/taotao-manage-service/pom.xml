@@ -36,7 +36,7 @@
             <artifactId>spring-context</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframeword</groupId>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
         </dependency>
         <dependency>

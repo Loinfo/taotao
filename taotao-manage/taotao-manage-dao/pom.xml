@@ -10,6 +10,7 @@
     <groupId>com.taotao</groupId>
     <artifactId>taotao-manage-dao</artifactId>
     <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <name>taotao-manage-dao</name>
     <url>http://maven.apache.org</url>
@@ -22,7 +23,6 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
