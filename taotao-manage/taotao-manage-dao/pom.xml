@@ -31,6 +31,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!-- 添加mybatis的依赖 -->
         <!-- Mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -59,4 +60,20 @@
             <artifactId>druid</artifactId>
         </dependency>
     </dependencies>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <!-- <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource> -->
+        </resources>
+    </build>
 </project>
